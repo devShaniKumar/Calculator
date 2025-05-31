@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.container h1 span {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2rem;
+  display: block;
+}
+
+.calculator {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  width: 260px;
+}
+
+#display {
+  background: #d6eac8;
+  color: #333;
+  font-size: 1.4rem;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #555;
+}
+
+.btn.red {
+  background: #e74c3c;
+}
+
+.btn.red:hover {
+  background: #c0392b;
+}
+
+.btn.blue {
+  background: #3498db;
+}
+
+.btn.blue:hover {
+  background: #2980b9;
+}
